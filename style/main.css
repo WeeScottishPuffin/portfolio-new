@@ -7,7 +7,7 @@ these tended to confuse some people, so I only kept
 the images as variables */
 
 :root {
---header-image: url('../imgs/wp.jpeg'); /*url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+--header-image: url('../image/wp.jpeg'); /*url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
 /*--body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');*/
 
 /* colors */
@@ -153,7 +153,20 @@ font-size: smaller;
 /* this makes the sidebar text slightly smaller */
 }
 
+.i88x31_container{
+	margin-left:-20px;
+	width:200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+}
 
+.i88x31 {
+	width:88px;
+	height:31px;
+	margin-bottom:10px;
+}
 /* this is the color of the main content area,
 between the sidebars! */
 main {
@@ -219,6 +232,40 @@ font-size: smaller;
 background-color: #09092f;
 }
 
+.projects{
+}
+
+.project{
+	display: grid;
+	grid-template-columns: 35% auto;
+	width:100%;
+}
+
+.project::after{
+	content: <hr>;
+}
+
+.project-name{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.project-description{
+	margin-top:0px;
+	font-size:12px;
+}
+
+.project-thumbnail{
+	width:calc(100% - 5px);
+	grid-row-start:1;
+	grid-row-end:3;
+}
+
+.project hr{
+	grid-column-start:1;
+	grid-column-end:3;
+	width:100%;
+}
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 
