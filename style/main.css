@@ -236,13 +236,7 @@ background-color: #09092f;
 }
 
 .project{
-	display: grid;
-	grid-template-columns: 35% auto;
 	width:100%;
-}
-
-.project::after{
-	content: <hr>;
 }
 
 .project-name{
@@ -252,13 +246,7 @@ background-color: #09092f;
 
 .project-description{
 	margin-top:0px;
-	font-size:12px;
-}
-
-.project-thumbnail{
-	width:calc(100% - 5px);
-	grid-row-start:1;
-	grid-row-end:3;
+	font-size:14px;
 }
 
 .project hr{
