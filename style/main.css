@@ -153,6 +153,10 @@ font-size: smaller;
 /* this makes the sidebar text slightly smaller */
 }
 
+#commit-dt, #commit-msg{
+	font-size:12px;
+}
+
 .i88x31_container{
 	margin-left:-20px;
 	width:200px;
